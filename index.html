@@ -136,8 +136,104 @@ animation-iteration-count: 1;
 }
 </style>
 <style>
-.topbar-left,
-.topbar-right {
+/* GLOBAL RESET (safe) */
+body {
+margin: 0;
+background: #f1f4f8;
+font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* CENTER ONLY THE MAIN CONTENT */
+.container, .main, .wrapper {
+max-width: 420px;
+margin: 20px auto; /* centers the card */
+background: #ffffff;
+border-radius: 16px;
+padding: 20px;
+box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+/* INPUTS — SHORTER & CENTERED */
+input, select {
+display: block;
+width: 92%; /* reduced length */
+margin: 10px auto; /* center horizontally */
+padding: 11px;
+border-radius: 10px;
+border: 1px solid #d0d5dd;
+font-size: 14px;
+box-sizing: border-box;
+}
+
+input:focus, select:focus {
+outline: none;
+border-color: #099c3a;
+box-shadow: 0 0 0 3px rgba(9,156,58,0.15);
+}
+
+/* QUESTION TEXT */
+.question_text {
+font-weight: 600;
+margin: 18px 0 8px;
+color: #333;
+}
+
+/* ANSWER CONTAINER FIX */
+.ans-box {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+}
+
+/* ANSWERS — AUTO FIT CONTENT */
+.answer {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+padding: 10px 14px;
+background: #f9fafb;
+border: 1px solid #e4e7ec;
+border-radius: 20px;
+cursor: pointer;
+white-space: nowrap; /* keeps text neat */
+transition: all 0.2s ease;
+font-size: 14px;
+}
+
+/* HOVER */
+.answer:hover {
+background: #eaf7f0;
+border-color: #099c3a;
+}
+
+/* SELECTED */
+.answer.active {
+background: #eaf7f0;
+border-color: #099c3a;
+box-shadow: 0 4px 12px rgba(9,156,58,0.15);
+}
+
+/* SUBMIT DIV */
+.submit, .btn-submit {
+width: 92%;
+margin: 20px auto;
+background: #099c3a;
+color: #fff;
+padding: 14px;
+border-radius: 12px;
+text-align: center;
+font-weight: 700;
+cursor: pointer;
+}
+
+/* MARQUEE POLISH */
+marquee {
+background: #eaf7f0;
+padding: 10px;
+border-radius: 8px;
+color: #099c3a;
+font-weight: 600;
+}
   display: flex;
   align-items: center;
   flex-shrink: 0;
