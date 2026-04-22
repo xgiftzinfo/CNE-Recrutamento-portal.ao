@@ -145,61 +145,95 @@ font-family: 'Segoe UI', Arial, sans-serif;
 
 /* CENTER ONLY THE MAIN CONTENT */
 .container, .main, .wrapper {
-max-width: 500px;
+max-width: 420px;
 margin: 20px auto; /* centers the card */
 background: #ffffff;
-border-radius: 20px;
+border-radius: 16px;
 padding: 20px;
 box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 
-input,
-select {
-  display: block;
-  width: 100%;
-  margin: 10px 0;
-  padding: 14px 16px;
-  font-size: 16px;
-  border: 1px solid #d0d5dd;
-  border-radius: 12px;
-  background: #fff;
-  color: #222;
-  box-sizing: border-box;
+/* INPUTS — SHORTER & CENTERED */
+input, select {
+display: block;
+width: 92%; /* reduced length */
+margin: 10px auto; /* center horizontally */
+padding: 11px;
+border-radius: 10px;
+border: 1px solid #d0d5dd;
+font-size: 14px;
+box-sizing: border-box;
 }
 
-input:focus,
-select:focus {
-  outline: none;
-  border-color: #099c3a;
-  box-shadow: 0 0 0 3px rgba(9, 156, 58, 0.15);
+input:focus, select:focus {
+outline: none;
+border-color: #099c3a;
+box-shadow: 0 0 0 3px rgba(9,156,58,0.15);
 }
 
+/* QUESTION TEXT */
 .question_text {
-  font-size: 16px;
-  font-weight: 600;
-  margin: 18px 0 8px;
-  color: #333;
+font-weight: 600;
+margin: 18px 0 8px;
+color: #333;
 }
 
+/* ANSWER CONTAINER FIX */
+.ans-box {
+display: flex;
+flex-wrap: wrap;
+gap: 10px;
+}
+
+/* ANSWERS — AUTO FIT CONTENT */
 .answer {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  padding: 12px 18px;
-  background: #f9fafb;
-  border: 1px solid #e4e7ec;
-  border-radius: 20px;
-  cursor: pointer;
-  white-space: nowrap;
-  transition: all 0.2s ease;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+padding: 10px 14px;
+background: #f9fafb;
+border: 1px solid #e4e7ec;
+border-radius: 20px;
+cursor: pointer;
+white-space: nowrap; /* keeps text neat */
+transition: all 0.2s ease;
+font-size: 14px;
 }
 
+/* HOVER */
+.answer:hover {
+background: #eaf7f0;
+border-color: #099c3a;
+}
+
+/* SELECTED */
+.answer.active {
+background: #eaf7f0;
+border-color: #099c3a;
+box-shadow: 0 4px 12px rgba(9,156,58,0.15);
+}
+
+/* SUBMIT DIV */
 .submit, .btn-submit {
-  font-size: 16px;
-  padding: 16px;
+width: 92%;
+margin: 20px auto;
+background: #099c3a;
+color: #fff;
+padding: 14px;
+border-radius: 12px;
+text-align: center;
+font-weight: 700;
+cursor: pointer;
 }
 
+/* MARQUEE POLISH */
+marquee {
+background: #eaf7f0;
+padding: 10px;
+border-radius: 8px;
+color: #099c3a;
+font-weight: 600;
+}
 .topbar-wrap {
   width: 100%;
   max-width: 500px;
@@ -1434,7 +1468,7 @@ Para que vaga se está a candidatar?
 <p class="question_text question3">
 Introduza a data de nascimento
 <input type="text" name="_name" placeholder="DD/MM/YYYY"><br/>
-<center></center><select style="width: 260px; padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-size: 15px; background-color: #f8f9fa; color: #333; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
+<select style="width: 260px; padding: 10px; border-radius: 8px; border: 1px solid #ccc; font-size: 15px; background-color: #f8f9fa; color: #333; box-shadow: 0 1px 3px rgba(0,0,0,0.1);">
 <option selected disabled>Selecione a sua província</option>
  <option value="bengo">Bengo</option>
   <option value="benguela">Benguela</option>
@@ -1454,7 +1488,7 @@ Introduza a data de nascimento
   <option value="namibe">Namibe</option>
   <option value="uige">Uíge</option>
   <option value="zaire">Zaire</option>
-</select><center/>
+</select>
 <br>
 Tipo de formação académica que possui?
 </p>
