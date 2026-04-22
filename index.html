@@ -148,95 +148,28 @@ font-family: 'Segoe UI', Arial, sans-serif;
 max-width: 500px;
 margin: 20px auto; /* centers the card */
 background: #ffffff;
-border-radius: 16px;
+border-radius: 20px;
 padding: 20px;
 box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 }
 
-/* INPUTS — SHORTER & CENTERED */
 input, select {
-display: block;
-width: 100%; /* reduced length */
-margin: 10px auto; /* center horizontally */
-padding: 11px;
-border-radius: 10px;
-border: 1px solid #d0d5dd;
-font-size: 14px;
-box-sizing: border-box;
+  font-size: 16px;
+  padding: 13px;
 }
 
-input:focus, select:focus {
-outline: none;
-border-color: #099c3a;
-box-shadow: 0 0 0 3px rgba(9,156,58,0.15);
-}
-
-/* QUESTION TEXT */
 .question_text {
-font-weight: 600;
-margin: 18px 0 8px;
-color: #333;
+  font-size: 16px;
 }
 
-/* ANSWER CONTAINER FIX */
-.ans-box {
-display: flex;
-flex-wrap: wrap;
-gap: 10px;
-}
-
-/* ANSWERS — AUTO FIT CONTENT */
 .answer {
-display: inline-flex;
-align-items: center;
-justify-content: center;
-padding: 10px 14px;
-background: #f9fafb;
-border: 1px solid #e4e7ec;
-border-radius: 20px;
-cursor: pointer;
-white-space: nowrap; /* keeps text neat */
-transition: all 0.2s ease;
-font-size: 14px;
+  font-size: 16px;
+  padding: 12px 18px;
 }
 
-/* HOVER */
-.answer:hover {
-background: #eaf7f0;
-border-color: #099c3a;
-}
-
-/* SELECTED */
-.answer.active {
-background: #eaf7f0;
-border-color: #099c3a;
-box-shadow: 0 4px 12px rgba(9,156,58,0.15);
-}
-
-/* SUBMIT DIV */
 .submit, .btn-submit {
-width: 100%;
-margin: 20px auto;
-background: #099c3a;
-color: #fff;
-padding: 14px;
-border-radius: 12px;
-text-align: center;
-font-weight: 700;
-cursor: pointer;
-}
-
-/* MARQUEE POLISH */
-marquee {
-background: #eaf7f0;
-padding: 10px;
-border-radius: 8px;
-color: #099c3a;
-font-weight: 600;
-}
-  display: flex;
-  align-items: center;
-  flex-shrink: 0;
+  font-size: 16px;
+  padding: 16px;
 }
 
 .topbar-wrap {
@@ -381,6 +314,14 @@ font-weight: 600;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
+.site-footer {
+  background: linear-gradient(135deg, #16196e, #1f2687);
+  color: #ffffff;
+  padding: 32px 20px 18px;
+  margin-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
 .footer-inner {
   max-width: 1100px;
   margin: 0 auto;
@@ -405,7 +346,7 @@ font-weight: 600;
   border-radius: 14px;
   padding: 8px;
 }
-}
+
 .footer-text h3 {
   font-size: 1.05rem;
   margin: 0 0 4px;
