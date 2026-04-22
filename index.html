@@ -156,7 +156,7 @@ box-shadow: 0 12px 30px rgba(0,0,0,0.08);
 /* INPUTS — SHORTER & CENTERED */
 input, select {
 display: block;
-width: 92%; /* reduced length */
+width: 100%; /* reduced length */
 margin: 10px auto; /* center horizontally */
 padding: 11px;
 border-radius: 10px;
@@ -215,7 +215,7 @@ box-shadow: 0 4px 12px rgba(9,156,58,0.15);
 
 /* SUBMIT DIV */
 .submit, .btn-submit {
-width: 92%;
+width: 100%;
 margin: 20px auto;
 background: #099c3a;
 color: #fff;
@@ -239,6 +239,33 @@ font-weight: 600;
   flex-shrink: 0;
 }
 
+.topbar-wrap {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 10px 10px 0;
+  box-sizing: border-box;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 14px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  border-radius: 14px;
+}
+
+.topbar-left,
+.topbar-right {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
 .topbar-center {
   flex: 1;
   text-align: center;
@@ -246,16 +273,17 @@ font-weight: 600;
 }
 
 .site-title {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 700;
   color: #1f2937;
-  line-height: 1.2;
+  line-height: 1.15;
 }
 
 .site-subtitle {
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   color: #6b7280;
   margin-top: 2px;
+  line-height: 1.1;
 }
 
 .menu-wrap {
@@ -263,24 +291,27 @@ font-weight: 600;
 }
 
 .menu-btn {
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
   border: none;
   border-radius: 10px;
   background: #f3f4f6;
   color: #374151;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   cursor: pointer;
+  padding: 0;
+  line-height: 1;
 }
 
 .menu-btn:hover {
   background: #e5e7eb;
+  color: #111827;
 }
 
 .menu-dropdown {
   display: none;
   position: absolute;
-  top: 48px;
+  top: 46px;
   left: 0;
   min-width: 180px;
   background: #ffffff;
@@ -296,7 +327,7 @@ font-weight: 600;
   padding: 12px 14px;
   text-decoration: none;
   color: #374151;
-  font-size: 0.95rem;
+  font-size: 0.92rem;
 }
 
 .menu-dropdown a:hover {
@@ -304,17 +335,44 @@ font-weight: 600;
   color: #9fcf67;
 }
 
-.menu-dropdown.show {
+.menu-wrap:hover .menu-dropdown {
   display: block;
 }
 
 .topbar-logo {
-  height: 46px;
-  width: 46px;
+  width: 56px;
+  height: 56px;
   object-fit: cover;
   border-radius: 12px;
   border: 1px solid #e5e7eb;
+  background: #fff;
 }
+
+@media (max-width: 480px) {
+  .topbar {
+    padding: 10px 12px;
+    gap: 8px;
+  }
+
+  .site-title {
+    font-size: 0.82rem;
+  }
+
+  .site-subtitle {
+    font-size: 0.66rem;
+  }
+
+  .menu-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 1.35rem;
+  }
+
+  .topbar-logo {
+    width: 50px;
+    height: 50px;
+  }
+
  .site-footer {
   background: linear-gradient(135deg, #16196e, #1f2687);
   color: #ffffff;
